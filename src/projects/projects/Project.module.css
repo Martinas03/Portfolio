@@ -1,0 +1,35 @@
+
+.project {
+    width: 250px;
+    background-color: #7f6d6d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    background-color: #863535;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: darkmagenta;
+}
+
+.textWraper {
+    width: 100%;
+    background-color: #d2baba;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.description {
+
+}
+

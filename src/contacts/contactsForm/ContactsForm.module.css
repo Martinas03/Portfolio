@@ -1,0 +1,8 @@
+.formBlock {
+    border: 1px solid;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
