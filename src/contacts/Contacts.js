@@ -11,7 +11,6 @@ const Contacts = () => {
                 <div><ContactsForm/></div>
                 <button className={s.button}>send</button>
             </div>
-
         </div>
     );
 };

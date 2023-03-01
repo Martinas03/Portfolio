@@ -6,9 +6,9 @@ const Footer = () => {
         <div className={s.header}>
             <h3>Oliaka Martinas</h3>
             <div className={s.social}>
-                <div>VK</div>
-                <div>TLG</div>
-                <div>WhA</div>
+                <div className={s.icon}>VK</div>
+                <div className={s.icon}>TLG</div>
+                <div className={s.icon}>WhA</div>
             </div>
             <span>@ All rights are reserved</span>
         </div>

@@ -13,3 +13,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+.icon {
+    background-color: darkgray;
+    height: 40px;
+    width: 50px;
+    text-align: center;
+}

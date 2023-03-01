@@ -5,7 +5,7 @@
 
 .contactsContainer {
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .title {
