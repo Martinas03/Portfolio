@@ -18,5 +18,19 @@
     background-color: darkgray;
     height: 40px;
     width: 50px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vkIcon {
+    color: #4C75A3;
+}
+
+.telegramIcon {
+    color: #0088cc;
+}
+
+.whatsAppIcon {
+    color: #128C7E;
 }

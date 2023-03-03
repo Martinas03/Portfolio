@@ -12,6 +12,12 @@
     height: 60px;
     width: 60px;
     background-color: #863535;
+    border-radius: 5px;
+    border: white 1px solid;
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .description {

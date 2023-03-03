@@ -1,6 +1,7 @@
 .skillsBlock {
      min-height: 100vh;
     background-color: #a8a83d;
+
 }
 
 .skillsContainer {
@@ -19,4 +20,20 @@
     justify-content: space-between;
     flex-wrap: wrap;
     box-sizing: border-box;
+}
+
+.jsIcon {
+    color: #e7e755;
+}
+
+.reactIcon {
+    color: #55e7ca;
+}
+
+.htmltIcon {
+    color: #d55f26;
+}
+
+.cssIcon {
+    color: #1155dc;
 }
