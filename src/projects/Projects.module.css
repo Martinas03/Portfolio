@@ -1,15 +1,27 @@
 .projectsBlock {
-    height: 100vh;
     background-color: #8e3eaa;
+padding: 100px 0;
 }
 
 .projectsContainer {
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .title {
     background-color: #ac5d5d;
+    margin: 0 0 33px;
+
+}
+
+.title h2 {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 300;
 }
 
 .projects {
@@ -18,5 +30,10 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
 
+@media screen and (max-width: 624px ) {
+.projects {
+    justify-content: center;
+}
 }

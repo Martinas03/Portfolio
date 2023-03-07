@@ -6,15 +6,11 @@ const Project = (props) => {
     return (
         <div className={s.project}>
             <div className={s.img}>
-                <button className={s.button}>Watch</button>
+                <a className={s.viewButton}>Watch</a>
             </div>
             <div className={s.textWraper}>
-                <div>
-                    <h3>{props.title}</h3>
-                </div>
-                <div>
-                    <span className={s.description}>{props.description}</span>
-                </div>
+                <h3>{props.title}</h3>
+                <span className={s.description}>{props.description}</span>
             </div>
         </div>
     );
