@@ -5,12 +5,14 @@ import s from './Project.module.css'
 const Project = (props) => {
     return (
         <div className={s.project}>
-            <div className={s.img}>
+            <div className={s.img} style={props.style}>
                 <a className={s.viewButton}>Watch</a>
             </div>
             <div className={s.textWraper}>
-                <h3>{props.title}</h3>
-                <span className={s.description}>{props.description}</span>
+                <div className={s.projectInfo}>
+                    <h3 className={s.projectTitle}>{props.title}</h3>
+                    <span className={s.description}>{props.description}</span>
+                </div>
             </div>
         </div>
     );

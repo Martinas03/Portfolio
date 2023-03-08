@@ -1,11 +1,10 @@
 
 .project {
-    width: 250px;
+    width: 350px;
     background-color: #7f6d6d;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 }
 
 .img {
@@ -15,10 +14,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.img::before {
+    position: absolute;
+    content: '';
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
 }
 
 .viewButton {
-    background-color: darkmagenta;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    position: relative;
+    z-index: 1;
 }
 
 .textWraper {
@@ -30,7 +46,25 @@
     justify-content: space-between;
 }
 
-.description {
+.projectInfo {
+    padding: 25px;
+}
 
+.description {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.projectTitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+    line-height: 1.2;
+    color: #fff;
 }
 
