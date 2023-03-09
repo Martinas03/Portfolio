@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Projects.module.css'
+import s from './Projects.module.scss'
 import styleContainer from './../comon/styles/Container.module.css'
 import Project from './projects/Project';
 import Title from '../comon/components/Title';
@@ -10,11 +10,9 @@ import socialImage from './../assets/images/social_network.png'
 const Projects = () => {
 
     const todolist = {
-        // color: 'blue',
         backgroundImage: `url(${todoImage})`,
     };
     const social = {
-        // color: 'blue',
         backgroundImage: `url(${socialImage})`,
     };
     return (

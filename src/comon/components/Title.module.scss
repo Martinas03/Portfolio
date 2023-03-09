@@ -1,0 +1,30 @@
+
+.title {
+    background-color: #ac5d5d;
+    margin: 0 0 33px;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    font-weight: 100;
+    font-size: 48px;
+    line-height: 1.2;
+    padding: 0;
+    .title h2 {
+        margin: 0;
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        background-color: white;
+        width: 55px;
+        height: 1px;
+        bottom: -30px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
+
+
+
+
+
