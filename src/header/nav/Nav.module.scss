@@ -1,0 +1,8 @@
+@import './../../comon/styles/sass/variebles.scss';
+
+.nav {
+    border: 1px solid $secondTextColor;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}

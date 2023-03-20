@@ -24,6 +24,7 @@ const Skills = () => {
                 {/*<h2 className={s.title}>Skills</h2>*/}
                 <Title text='Skills'/>
                 <div className={s.skills}>
+
                     <Skill title={'JS'} description={'Can do nice functions'}
                            logo={<FontAwesomeIcon icon={faHouse} size={'4x'} color={'white'}/>}/>
                     <Skill title={'JS'} description={'Can do nice functions'}
