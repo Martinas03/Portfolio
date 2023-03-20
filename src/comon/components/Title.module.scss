@@ -2,6 +2,8 @@
 
 .title {
     //background-color: #ac5d5d;
+    left: auto;
+    width: 100%;
     margin: 0 0 33px;
     position: relative;
     font-family: 'Inter', sans-serif;
@@ -14,6 +16,8 @@
         margin: 0;
         font-size: 48px;
         font-weight: 300;
+        display: flex;
+        justify-content: center;
 
     }
     &::after {

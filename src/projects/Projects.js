@@ -5,6 +5,7 @@ import Project from './projects/Project';
 import Title from '../comon/components/Title';
 import todoImage from './../assets/images/todolist.png'
 import socialImage from './../assets/images/social_network.png'
+import {GoProject} from "react-icons/go";
 
 
 const Projects = () => {
@@ -18,7 +19,7 @@ const Projects = () => {
     return (
         <div className={s.projectsBlock}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
-                <Title text={'Projects'}/>
+                <Title text={'Projects'} icon={<GoProject style={{height: '30px', width: '30px', color: 'white'}}/>} subtitle={'Projects'}/>
                 <div className={s.projects}>
                     <Project style={social} title={'Social network'} description={'Cool social network'}/>
                     <Project style={todolist} title={'Todolist'} description={'Cool todolist'}/>

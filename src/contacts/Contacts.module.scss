@@ -1,5 +1,8 @@
+@import "./src/comon/styles/sass/variebles";
+
 .contactsBlock {
-    background-color: #ee61d9;
+    background-color: $bgSecondColor;
+    padding: 100px 0;
 }
 
 .contactsContainer {

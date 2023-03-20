@@ -15,6 +15,7 @@ import {
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Title from "../comon/components/Title";
 import {faHouse} from "@fortawesome/free-solid-svg-icons";
+import {IoShapesOutline} from "react-icons/io5";
 
 
 const Skills = () => {
@@ -22,7 +23,7 @@ const Skills = () => {
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 {/*<h2 className={s.title}>Skills</h2>*/}
-                <Title text='Skills'/>
+                <Title text='Skills' icon={<IoShapesOutline style={{height: '30px', width: '30px', color: 'white'}}/>}  subtitle={'Skills'}/>
                 <div className={s.skills}>
 
                     <Skill title={'JS'} description={'Can do nice functions'}
