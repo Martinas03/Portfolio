@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './Skills.module.css'
+import s from './Skills.module.scss'
 import styleContainer from './../comon/styles/Container.module.css'
 import Skill from "./skill/Skill";
 import {
@@ -13,23 +13,29 @@ import {
     faVk, faWhatsapp
 } from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Title from "../comon/components/Title";
+import {faHouse} from "@fortawesome/free-solid-svg-icons";
 
 
 const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                <h2 className={s.title}>Skills</h2>
+                {/*<h2 className={s.title}>Skills</h2>*/}
+                <Title text='Skills'/>
                 <div className={s.skills}>
                     <Skill title={'JS'} description={'Can do nice functions'}
-                           logo={<FontAwesomeIcon className={s.jsIcon} icon={faSquareJs} size={'3x'}/>}/>
+                           logo={<FontAwesomeIcon icon={faHouse} size={'4x'} color={'white'}/>}/>
+                    <Skill title={'JS'} description={'Can do nice functions'}
+                           logo={<FontAwesomeIcon icon={faSquareJs} size={'4x'} color={'white'}/>}/>
+                    <Skill title={'JS'} description={'Can do nice functions'}
+                           logo={<FontAwesomeIcon icon={faSquareJs} size={'4x'} color={'white'}/>}/>
                     <Skill title={'CSS'} description={'Can do nice styles'}
-                           logo={<FontAwesomeIcon className={s.cssIcon} icon={faCss3Alt} size={'3x'}/>}/>
+                           logo={<FontAwesomeIcon icon={faCss3Alt} size={'4x'} color={'white'}/>}/>
                     <Skill title={'REACT'} description={'Can do nice component'}
-                           logo={<FontAwesomeIcon className={s.reactIcon} icon={faReact} size={'3x'} color={'blue'}/>}/>
+                           logo={<FontAwesomeIcon icon={faReact} size={'4x'} color={'white'}/>}/>
                     <Skill title={'HTML'} description={'Can do nice HTML'}
-                           logo={<FontAwesomeIcon className={s.htmltIcon} icon={faHtml5} size={'3x'}
-                                                  color={'orange'}/>}/>
+                           logo={<FontAwesomeIcon icon={faHtml5} size={'4x'} color={'white'}/>}/>
                 </div>
             </div>
         </div>

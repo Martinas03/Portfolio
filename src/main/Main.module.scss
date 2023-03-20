@@ -1,0 +1,61 @@
+@import './../comon/styles/sass/variebles.scss';
+.mainBlock {
+    min-height: 100vh;
+    background-color: $bgColor;
+    padding: 100px 0;
+    .container {
+        .content {
+            max-width: 770px;
+            width: 100%;
+            margin-left: auto;
+            .text {
+                font-family: 'Inter', sans-serif;
+                color: white;
+                border: 1px solid white;
+                h1 {
+                    font-size: 78px;
+                    letter-spacing: -0.2px;
+                    line-height: 90px;
+                    margin-bottom: 43px;
+                    font-weight: 300;
+                }
+            }
+            .description {
+                max-width: 480px;
+                margin-bottom: 31px;
+                color: $secondTextColor;
+            }
+            .href {
+                width: 175px;
+                height: 175px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-left: auto;
+                border-radius: 50%;
+                border: 1px solid #575757;
+                position: relative;
+                overflow: hidden;
+                margin-right: 15px;
+            }
+            .facts {;
+                gap: 100px;
+                row-gap: 100px;
+                column-gap: 100px;
+                margin-top: 55px;
+                display: flex;
+                border: 1px solid white;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+

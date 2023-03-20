@@ -8,12 +8,12 @@ const Project = (props) => {
             <div className={s.img} style={props.style}>
                 <a className={s.viewButton}>Watch</a>
             </div>
-            {/*<div className={s.textWraper}>*/}
-            <div className={s.projectInfo}>
-                <h3 className={s.projectTitle}>{props.title}</h3>
-                <span className={s.description}>{props.description}</span>
+            <div className={s.textWraper}>
+                <div className={s.projectInfo}>
+                    <h2 className={s.projectTitle}>{props.title}</h2>
+                    <span className={s.description}>{props.description}</span>
+                </div>
             </div>
-            {/*</div>*/}
         </div>
     );
 };

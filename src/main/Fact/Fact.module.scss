@@ -1,0 +1,19 @@
+@import './../../comon/styles/sass/variebles.scss';
+.block {
+
+}
+
+.number {
+  font-size: 72px;
+  color: $primaryColor;
+  line-height: 56px;
+  margin-bottom: 38px;
+  font-weight: 300;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: $secondTextColor;
+}

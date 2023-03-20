@@ -1,5 +1,7 @@
+@import './../comon/styles/sass/variebles.scss';
+
 .projectsBlock {
-    background-color: #212529;
+    background-color: $bgColor;
     padding: 100px 0;
     .projectsContainer {
         flex-direction: column;
@@ -9,7 +11,7 @@
             //border: 1px solid;
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: flex-start;
             flex-wrap: wrap;
             @media screen and (max-width: 624px ) {

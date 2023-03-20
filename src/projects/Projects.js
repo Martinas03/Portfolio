@@ -19,7 +19,6 @@ const Projects = () => {
         <div className={s.projectsBlock}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <Title text={'Projects'}/>
-
                 <div className={s.projects}>
                     <Project style={social} title={'Social network'} description={'Cool social network'}/>
                     <Project style={todolist} title={'Todolist'} description={'Cool todolist'}/>

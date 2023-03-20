@@ -7,12 +7,9 @@ const Title = (props) => {
     return (
 
                 <div className={s.title}>
-                    <h1>{props.text}</h1>
+                    <h2>{props.text}</h2>
                 </div>
     )
-
-
-
 };
 
 export default Title;

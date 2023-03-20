@@ -1,26 +1,31 @@
+@import './../styles/sass/variebles.scss';
 
 .title {
-    background-color: #ac5d5d;
+    //background-color: #ac5d5d;
     margin: 0 0 33px;
     position: relative;
     font-family: 'Inter', sans-serif;
-    color: #fff;
+    color: $textColor;
     font-weight: 100;
-    font-size: 48px;
+    //font-size: 48px;
     line-height: 1.2;
     padding: 0;
-    .title h2 {
+    h2 {
         margin: 0;
+        font-size: 48px;
+        font-weight: 300;
+
     }
     &::after {
         content: '';
         position: absolute;
-        background-color: white;
+        background-color: $primaryColor;
         width: 55px;
         height: 1px;
         bottom: -30px;
         left: 50%;
         transform: translate(-50%, 50%);
+        margin-bottom: 15px;
     }
 }
 

@@ -1,0 +1,58 @@
+@import "./src/comon/styles/sass/variebles";
+
+.skillsBlock {
+  //min-height: 100vh;
+  background-color: $bgSecondColor;
+  padding: 100px 0;
+
+  .skillsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    border: 1px solid white;
+
+    .skills {
+      border: $whiteBorder;
+      width: 100%;
+      display: flex;
+      justify-content: start;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      @media screen and (max-width: 627px) {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
+//.title {
+//  background-color: #acacac;
+//}
+
+//.skills {
+//  border: 1px solid white;
+//  width: 100%;
+//  display: flex;
+//  justify-content: space-between;
+//  flex-wrap: wrap;
+//  box-sizing: border-box;
+//}
+
+//.jsIcon {
+//  color: #e7e755;
+//}
+//
+//.reactIcon {
+//  color: #55e7ca;
+//}
+//
+//.htmltIcon {
+//  color: #d55f26;
+//}
+//
+//.cssIcon {
+//  color: #1155dc;
+//}
+
+
+
