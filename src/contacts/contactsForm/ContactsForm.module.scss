@@ -1,15 +1,25 @@
+@import "./src/comon/styles/sass/variebles";
+
 .formBlock {
 }
 
 .formContainer {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     /*flex-direction: column;*/
     /*align-items: center;*/
-    border: 1px solid;
+    //align-items: center;
+    border: 1px solid white;
+    box-sizing: border-box;
     label {
         color: white;
+    }
+    textarea {
+        background-color: $bgSecondColor;
+        border: none;
+        height: 140px;
+        //border-bottom: $secondTextColor;
     }
 }
 
@@ -19,8 +29,18 @@
 }
 
 .button {
-    padding: 10px 20px;
-    background-color: gray;
+    background: $primaryColor;
+    color: #000000;
+    text-align: center;
+    padding: 11px 58px 10px 58px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: .3s;
+    cursor: pointer;
+    border: $primaryColor;
 }
 
 @media screen and (max-width: 430px){

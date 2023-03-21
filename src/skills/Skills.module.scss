@@ -9,16 +9,17 @@
     flex-direction: column;
     justify-content: flex-start;
     border: 1px solid white;
-
-    .skills {
-      border: $whiteBorder;
-      width: 100%;
-      display: flex;
-      justify-content: start;
-      flex-wrap: wrap;
-      box-sizing: border-box;
-      @media screen and (max-width: 627px) {
-        justify-content: center;
+    .content {
+      .skills {
+        border: $whiteBorder;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        @media screen and (max-width: 627px) {
+          justify-content: center;
+        }
       }
     }
   }

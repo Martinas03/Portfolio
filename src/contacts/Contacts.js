@@ -10,8 +10,12 @@ const Contacts = () => {
     return (
         <div className={s.contactsBlock}>
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
-                <Title text={'Contacts'} icon={ <RiContactsLine style={{height: '30px', width: '30px', color: 'white'}}/>} subtitle={'Contacts'}/>
-                <ContactsForm/>
+                <div className={`${styleContainer.content} ${s.content}`}>
+                    <Title text={'Contacts'}
+                           icon={<RiContactsLine style={{height: '30px', width: '30px', color: 'white'}}/>}
+                           subtitle={'Contacts'}/>
+                    <ContactsForm/>
+                </div>
             </div>
         </div>
     );

@@ -19,11 +19,14 @@ const Projects = () => {
     return (
         <div className={s.projectsBlock}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
-                <Title text={'Projects'} icon={<GoProject style={{height: '30px', width: '30px', color: 'white'}}/>} subtitle={'Projects'}/>
-                <div className={s.projects}>
-                    <Project style={social} title={'Social network'} description={'Cool social network'}/>
-                    <Project style={todolist} title={'Todolist'} description={'Cool todolist'}/>
+                <div className={`${styleContainer.content} ${s.content}`}>
+                    <Title text={'Projects'} icon={<GoProject style={{height: '30px', width: '30px', color: 'white'}}/>} subtitle={'Projects'}/>
+                    <div className={s.projects}>
+                        <Project style={social} title={'Social network'} description={'Cool social network'}/>
+                        <Project style={todolist} title={'Todolist'} description={'Cool todolist'}/>
+                    </div>
                 </div>
+
             </div>
         </div>
     );

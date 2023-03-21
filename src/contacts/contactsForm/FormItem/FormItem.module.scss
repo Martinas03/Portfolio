@@ -7,5 +7,14 @@
   width: 50%;
   margin-bottom: 34px;
   color: $textColor;
+  //margin-left: 1px;
+  //margin-right: 1px;
+  input {
+    background-color: $bgSecondColor;
+    border: none;
+  }
+}
 
+.span {
+  color: $secondTextColor;
 }

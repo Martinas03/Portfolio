@@ -3,18 +3,21 @@
 .contactsBlock {
     background-color: $bgSecondColor;
     padding: 100px 0;
+    .contactsContainer {
+        flex-direction: column;
+        justify-content: center;
+        .content {
+
+        }
+    }
 }
 
-.contactsContainer {
-    flex-direction: column;
-    justify-content: center;
-}
 
-.title {
-    background-color: #ef6a3d;
-}
 
-.button {
-    background-color: gray;
-}
+//.title {
+//    background-color: #ef6a3d;
+//}
+//.button {
+//    background-color: gray;
+//}
 

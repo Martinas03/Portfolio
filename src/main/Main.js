@@ -2,12 +2,17 @@ import React from 'react';
 import s from './Main.module.scss'
 import styleContainer from './../comon/styles/Container.module.css'
 import {Fact} from "./Fact/Fact";
+import Sign from "../comon/components/Sign/Sign";
+import Title from "../comon/components/Title";
+import {AiOutlineHome} from "react-icons/ai";
 
-const Main = () => {
+
+const Main = (props) => {
     return (
         <div className={s.mainBlock}>
             <div className={`${styleContainer.container} ${s.container}`} >
-                <div className={s.content}>
+                <div className={`${s.content} ${styleContainer.content}`}>
+                    <Title text={'About me'} icon={<AiOutlineHome style={{height: '30px', width: '30px', color: 'white'}}/>}  subtitle={'Home'}/>
                     <div className={s.text}>
                         <h4>Home</h4>
                         <h1>Hi! I am Oliaka Martinas! I"m frontend react developer</h1>
@@ -22,7 +27,6 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-
         </div>
     );
 };

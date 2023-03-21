@@ -22,22 +22,22 @@ const Skills = () => {
     return (
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
-                {/*<h2 className={s.title}>Skills</h2>*/}
-                <Title text='Skills' icon={<IoShapesOutline style={{height: '30px', width: '30px', color: 'white'}}/>}  subtitle={'Skills'}/>
-                <div className={s.skills}>
-
-                    <Skill title={'JS'} description={'Can do nice functions'}
-                           logo={<FontAwesomeIcon icon={faHouse} size={'4x'} color={'white'}/>}/>
-                    <Skill title={'JS'} description={'Can do nice functions'}
-                           logo={<FontAwesomeIcon icon={faSquareJs} size={'4x'} color={'white'}/>}/>
-                    <Skill title={'JS'} description={'Can do nice functions'}
-                           logo={<FontAwesomeIcon icon={faSquareJs} size={'4x'} color={'white'}/>}/>
-                    <Skill title={'CSS'} description={'Can do nice styles'}
-                           logo={<FontAwesomeIcon icon={faCss3Alt} size={'4x'} color={'white'}/>}/>
-                    <Skill title={'REACT'} description={'Can do nice component'}
-                           logo={<FontAwesomeIcon icon={faReact} size={'4x'} color={'white'}/>}/>
-                    <Skill title={'HTML'} description={'Can do nice HTML'}
-                           logo={<FontAwesomeIcon icon={faHtml5} size={'4x'} color={'white'}/>}/>
+                <div className={`${styleContainer.content} ${s.content}`}>
+                    <Title text='Skills' icon={<IoShapesOutline style={{height: '30px', width: '30px', color: 'white'}}/>}  subtitle={'Skills'}/>
+                    <div className={s.skills}>
+                        <Skill title={'JS'} description={'Can do nice functions'}
+                               logo={<FontAwesomeIcon icon={faHouse} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                        <Skill title={'JS'} description={'Can do nice functions'}
+                               logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                        <Skill title={'JS'} description={'Can do nice functions'}
+                               logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                        <Skill title={'CSS'} description={'Can do nice styles'}
+                               logo={<FontAwesomeIcon icon={faCss3Alt} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                        <Skill title={'REACT'} description={'Can do nice component'}
+                               logo={<FontAwesomeIcon icon={faReact} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                        <Skill title={'HTML'} description={'Can do nice HTML'}
+                               logo={<FontAwesomeIcon icon={faHtml5} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                    </div>
                 </div>
             </div>
         </div>

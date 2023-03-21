@@ -12,11 +12,20 @@ const ContactsForm = () => {
                 {/*<FormItem title={'Message'} placeholder={'Write your message here'}/>*/}
                 <label htmlFor="phone-number">Message
                 </label>
-                <input type="text" placeholder={'Write your message here'}/>
-                <button className={s.button}>send</button>
+                <textarea placeholder={'Write your message here'}/>
+                {/*<button className={s.button}>send</button>*/}
+                <Button/>
 
             </form>
     );
 };
 
 export default ContactsForm;
+
+export const Button = () => {
+    return (
+        <div>
+           <button className={s.button}>Send message</button>
+        </div>
+    )
+}

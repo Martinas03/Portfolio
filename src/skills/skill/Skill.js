@@ -11,7 +11,7 @@ const Skill = (props) => {
                 <div>
                     {props.logo}
                 </div>
-                <h3>{props.title}</h3>
+                <h1>{props.title}</h1>
             </div>
             <span className={s.description}>
                 {props.description}
