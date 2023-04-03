@@ -7,6 +7,13 @@
     align-items: center;
     text-align: center;
     flex: 0 0 auto;
+    flex-wrap: wrap;
+    //padding-left: 5%;
+    //padding-right: 5%;
+    @media screen and (max-width: 624px ) {
+        width: 50%;
+
+    }
 
     /*padding-left: 1px;*/
     /*padding-right: 1px;*/
@@ -20,7 +27,7 @@
         font-weight: 300;
     }
     .icon {
-        border: 2px solid #565656;
+        border: 2px solid $secondTextColor;
         border-radius: 85px;
         padding: 54px 0 48px 0;
         margin-bottom: 20px;
@@ -40,6 +47,9 @@
         /*display: flex;*/
         /*justify-content: center;*/
         /*align-items: center;*/
+        &:hover {
+            border: 2px solid $primaryColor;
+        }
     }
     .description {
         color: $textColor;

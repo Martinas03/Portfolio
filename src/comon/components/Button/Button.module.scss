@@ -1,0 +1,24 @@
+@import "./src/comon/styles/sass/variebles";
+
+
+.button {
+    background: $primaryColor;
+    color: #000000;
+    text-align: center;
+    padding: 11px 58px 10px 58px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    text-transform: uppercase;
+    transition: .3s;
+    cursor: pointer;
+    border: 1px solid $primaryColor;
+    &:hover {
+        color: $primaryColor;
+        background-color: $bgColor;
+        transition: all 0.3s ease-in-out 0s;
+        border: 1px solid $primaryColor;
+        box-sizing: border-box;
+    }
+}

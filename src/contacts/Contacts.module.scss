@@ -1,11 +1,13 @@
 @import "./src/comon/styles/sass/variebles";
+@import "./src/comon/styles/sass/mixins";
 
 .contactsBlock {
-    background-color: $bgSecondColor;
-    padding: 100px 0;
+    @include block();
+    //background-color: $bgColor;
+    //padding: 100px 0;
     .contactsContainer {
-        flex-direction: column;
-        justify-content: center;
+        //flex-direction: column;
+        //justify-content: center;
         .content {
 
         }

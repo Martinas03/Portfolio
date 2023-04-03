@@ -1,4 +1,14 @@
+@import "./src/comon/styles/sass/variebles.scss";
+
+
 .App {
+  background-color: $bgColor;
+  @media screen and (max-width: 1024px ) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
 }
 

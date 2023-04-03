@@ -1,17 +1,15 @@
 @import "./src/comon/styles/sass/variebles";
+@import "./src/comon/styles/sass/mixins";
 
 .skillsBlock {
-  //min-height: 100vh;
-  background-color: $bgSecondColor;
-  padding: 100px 0;
+  @include block();
 
   .skillsContainer {
     flex-direction: column;
     justify-content: flex-start;
-    border: 1px solid white;
     .content {
       .skills {
-        border: $whiteBorder;
+        //border: $whiteBorder;
         width: 100%;
         display: flex;
         justify-content: start;

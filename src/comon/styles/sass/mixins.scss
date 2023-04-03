@@ -8,3 +8,15 @@
   color: $textColor;
 }
 
+@mixin flex($flexDirection, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin block() {
+  background-color: $bgColor;
+  padding: 50px 0;
+}
+

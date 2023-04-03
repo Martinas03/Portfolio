@@ -12,7 +12,7 @@ const Contacts = () => {
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <div className={`${styleContainer.content} ${s.content}`}>
                     <Title text={'Contacts'}
-                           icon={<RiContactsLine style={{height: '30px', width: '30px', color: 'white'}}/>}
+                           icon={<RiContactsLine style={{height: '20px', width: '20px', color: 'white'}}/>}
                            subtitle={'Contacts'}/>
                     <ContactsForm/>
                 </div>

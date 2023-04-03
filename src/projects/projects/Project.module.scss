@@ -3,18 +3,11 @@
 
 .project {
   width: 350px;
-  //background-color: #c9bdbd;
-  //display: flex;
-  //flex-direction: column;
-  //align-items: center;
 
   .img {
     height: 300px;
     width: 100%;
-    //background-color: #863535;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,42 +29,31 @@
       padding: 10px 20px;
       position: relative;
       z-index: 1;
+      border: 1px solid $primaryColor;
+
+      &:hover {
+        border: 1px solid $primaryColor;
+        background-color: $bgColor;
+        transition: all 0.3s ease-in-out 0s;
+        color: $primaryColor;
+      }
     }
   }
 
   .textWraper {
     width: 100%;
-    //background-color: #d2baba;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+    @include flex(column, center, flex-start);
 
     .projectInfo {
       padding: 25px;
-      //font-family: 'Inter', sans-serif;
 
       .projectTitle {
-        //font-family: 'Inter', sans-serif;
-        //font-size: 24px;
-        //font-weight: 300;
-        //line-height: 1.2;
-        //color: $textColor;
-
         @include text($textFontFamily, 24px, 300, 1.2);
-
         margin: 0 0 5px;
       }
 
       .description {
-        //font-family: 'Inter', sans-serif;
-        //font-size: 14px;
-        //font-weight: 300;
-        //line-height: 1.2;
-        //color: $textColor;
-
-        @include text($textFontFamily, 14px, 300, 1.2);
-
+       @include text($textFontFamily, 14px, 300, 1.2);
         margin: 0;
       }
 
@@ -79,15 +61,6 @@
   }
 }
 
-
-//.textWraper {
-//    width: 100%;
-//    background-color: #d2baba;
-//    display: flex;
-//    flex-direction: column;
-//    align-items: flex-start;
-//    justify-content: space-between;
-//}
 
 
 

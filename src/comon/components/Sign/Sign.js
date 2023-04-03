@@ -6,7 +6,7 @@ import s from './Sign.module.scss'
 const Sign = (props) => {
     return (
         <h4 className={s.subtitle}>
-<i>{props.icon}</i>
+            <i>{props.icon}</i>
             {props.subtitle}
         </h4>
     );

@@ -16,6 +16,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Title from "../comon/components/Title";
 import {faHouse} from "@fortawesome/free-solid-svg-icons";
 import {IoShapesOutline} from "react-icons/io5";
+import Fade from 'react-reveal/Fade';
 
 
 const Skills = () => {
@@ -23,20 +24,30 @@ const Skills = () => {
         <div className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 <div className={`${styleContainer.content} ${s.content}`}>
-                    <Title text='Skills' icon={<IoShapesOutline style={{height: '30px', width: '30px', color: 'white'}}/>}  subtitle={'Skills'}/>
+                    <Fade bottom>
+                        <Title text='Skills'
+                               icon={<IoShapesOutline style={{height: '20px', width: '20px', color: 'white'}}/>}
+                               subtitle={'Skills'}/>
+                    </Fade>
                     <div className={s.skills}>
                         <Skill title={'JS'} description={'Can do nice functions'}
-                               logo={<FontAwesomeIcon icon={faHouse} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                               logo={<FontAwesomeIcon icon={faHouse} size={'3x'} color={'white'}
+                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
                         <Skill title={'JS'} description={'Can do nice functions'}
-                               logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                               logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'}
+                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
                         <Skill title={'JS'} description={'Can do nice functions'}
-                               logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                               logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'}
+                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
                         <Skill title={'CSS'} description={'Can do nice styles'}
-                               logo={<FontAwesomeIcon icon={faCss3Alt} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                               logo={<FontAwesomeIcon icon={faCss3Alt} size={'3x'} color={'white'}
+                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
                         <Skill title={'REACT'} description={'Can do nice component'}
-                               logo={<FontAwesomeIcon icon={faReact} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                               logo={<FontAwesomeIcon icon={faReact} size={'3x'} color={'white'}
+                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
                         <Skill title={'HTML'} description={'Can do nice HTML'}
-                               logo={<FontAwesomeIcon icon={faHtml5} size={'3x'} color={'white'} style={{margin: 'auto auto 29px auto'}}/>}/>
+                               logo={<FontAwesomeIcon icon={faHtml5} size={'3x'} color={'white'}
+                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
                     </div>
                 </div>
             </div>

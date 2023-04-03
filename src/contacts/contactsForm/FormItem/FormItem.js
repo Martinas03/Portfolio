@@ -9,7 +9,7 @@ const FormItem = (props) => {
                     props.isRequired === 'true'
                         ? <sup style={{color: 'red'}}>*</sup>
                         : props.isRequired === 'false'
-                        ? <span className={s.span}>(optional)</span> : ''}
+                        ? <span className={s.span}> (optional)</span> : ''}
             </label>
             <input type="text" placeholder={props.placeholder}/>
         </div>

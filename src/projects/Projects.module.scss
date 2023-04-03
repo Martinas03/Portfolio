@@ -1,8 +1,8 @@
 @import './../comon/styles/sass/variebles.scss';
+@import './../comon/styles/sass/mixins.scss';
 
 .projectsBlock {
-    background-color: $bgColor;
-    padding: 100px 0;
+    @include block();
     .projectsContainer {
         flex-direction: column;
         justify-content: flex-start;

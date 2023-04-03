@@ -9,9 +9,17 @@
   color: $textColor;
   //margin-left: 1px;
   //margin-right: 1px;
+  @media screen and (max-width: 624px ) {
+    width: 100%;
+  }
+  label {
+    text-transform: uppercase;
+  }
   input {
     background-color: $bgSecondColor;
     border: none;
+    height: 30px;
+    //font-size: 25px;
   }
 }
 

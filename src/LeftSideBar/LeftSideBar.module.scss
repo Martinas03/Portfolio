@@ -1,0 +1,122 @@
+@import "./src/comon/styles/sass/variebles.scss";
+@import "./src/comon/styles/sass/mixins.scss";
+
+.container {
+  max-width: 350px;
+  padding: 30px;
+  background-color: $bgColor;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid $secondTextColor;
+  position: fixed;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  @media screen and (max-width: 1024px ) {
+    display: block;
+    position: relative;
+    max-width: 767px;
+    left: 0;
+    top: 0;
+    transform: translateY(0);
+    margin-top: 20px;
+    padding: 30px;
+  }
+
+
+  .sideBarHeader {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      height: auto;
+      max-width: 100%;
+      object-fit: cover;
+    }
+
+    .explanation {
+      max-width: 110px;
+      text-align: right;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  .me {
+    width: 100%;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 46px;
+    border-radius: 30px;
+    display: block;
+  }
+
+  .eMail {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .address {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+
+  .rights {
+    margin-bottom: 25px;
+    font-size: 14px;
+    text-align: center;
+    padding: 0;
+    line-height: 1.2;
+    color: $secondTextColor;
+  }
+
+  .social {
+    margin-bottom: 30px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    color: $primaryColor;
+
+    .iconWrapper {
+      width: 60px;
+      height: 60px;
+      border: 1px solid $secondTextColor;
+      border-radius: 50%;
+      @include flex(row, center, center);
+
+
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+          color: $primaryColor;
+          //background-color: $bgColor;
+          //transition: all 0.3s ease-in-out 0s;
+          //border: 1px solid $primaryColor;
+          //box-sizing: border-box;
+
+        }
+      }
+    }
+  }
+
+  .buttonWrapper {
+    @include flex(row, center, center);
+  }
+}
