@@ -17,6 +17,10 @@
   transition: .3s;
   background: $bgColor;
   z-index: 99;
+  @media screen and (max-width: 767px ) {
+    right: 38px;
+    top: 30px;
+  }
   .bar {
     width: 20px;
     display: block;

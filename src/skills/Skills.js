@@ -29,26 +29,50 @@ const Skills = () => {
                                icon={<IoShapesOutline style={{height: '20px', width: '20px', color: 'white'}}/>}
                                subtitle={'Skills'}/>
                     </Fade>
+
+                    <Fade bottom>
+
+
                     <div className={s.skills}>
-                        <Skill title={'JS'} description={'Can do nice functions'}
-                               logo={<FontAwesomeIcon icon={faHouse} size={'3x'} color={'white'}
-                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
-                        <Skill title={'JS'} description={'Can do nice functions'}
-                               logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'}
-                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
-                        <Skill title={'JS'} description={'Can do nice functions'}
-                               logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'}
-                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
-                        <Skill title={'CSS'} description={'Can do nice styles'}
-                               logo={<FontAwesomeIcon icon={faCss3Alt} size={'3x'} color={'white'}
-                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
-                        <Skill title={'REACT'} description={'Can do nice component'}
-                               logo={<FontAwesomeIcon icon={faReact} size={'3x'} color={'white'}
-                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
-                        <Skill title={'HTML'} description={'Can do nice HTML'}
-                               logo={<FontAwesomeIcon icon={faHtml5} size={'3x'} color={'white'}
-                                                      style={{margin: 'auto auto 29px auto'}}/>}/>
+                        {/*<Fade left>*/}
+                            <Skill title={'JS'} description={'Can do nice functions'}
+                                   logo={<FontAwesomeIcon icon={faHouse} size={'3x'} color={'white'}
+                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
+
+                        {/*<Fade bottom>*/}
+                            <Skill title={'JS'} description={'Can do nice functions'}
+                                   logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'}
+                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
+                        {/*</Fade>*/}
+
+                        {/*<Fade top>*/}
+                            <Skill title={'JS'} description={'Can do nice functions'}
+                                   logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'}
+                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
+                        {/*</Fade>*/}
+
+                        {/*<Fade right>*/}
+                            <Skill title={'CSS'} description={'Can do nice styles'}
+                                   logo={<FontAwesomeIcon icon={faCss3Alt} size={'3x'} color={'white'}
+                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
+                        {/*</Fade>*/}
+
+                        {/*<Fade left>*/}
+                            <Skill title={'REACT'} description={'Can do nice component'}
+                                   logo={<FontAwesomeIcon icon={faReact} size={'3x'} color={'white'}
+                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
+                        {/*</Fade>*/}
+
+                        {/*<Fade bottom>*/}
+                            <Skill title={'HTML'} description={'Can do nice HTML'}
+                                   logo={<FontAwesomeIcon icon={faHtml5} size={'3x'} color={'white'}
+                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
+                        {/*</Fade>*/}
+
+                        {/*</Fade>*/}
+
                     </div>
+            </Fade>
                 </div>
             </div>
         </div>

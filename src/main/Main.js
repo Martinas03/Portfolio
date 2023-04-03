@@ -18,7 +18,7 @@ const Main = (props) => {
                            subtitle={'Home'}/>
                     <div className={s.text}>
                         {/*<h4>Home</h4>*/}
-                        <h1>Hi! I am Oliaka Martinas! I"m frontend react developer</h1>
+                        <h1>Hi! I am Martinas <span>Oliaka!</span> I"m frontend react developer</h1>
                         {/*<p>Web disigner</p>*/}
                     </div>
                     <p className={s.description}>Veb developerVeb developerVeb developerVeb developerVeb developerVeb

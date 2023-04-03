@@ -18,6 +18,9 @@
                     line-height: 90px;
                     margin-bottom: 43px;
                     font-weight: 300;
+                    span {
+                        color: $primaryColor;
+                    }
                 }
             }
             .description {
@@ -60,7 +63,12 @@
 }
 
 .img {
-    animation: rotating 6s infinite linear;
+    animation: spin 4s infinite linear;
+}
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 .icon {

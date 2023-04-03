@@ -6,6 +6,7 @@ import Title from '../comon/components/Title';
 import todoImage from './../assets/images/todolist.png'
 import socialImage from './../assets/images/social_network.png'
 import {GoProject} from "react-icons/go";
+import Fade from 'react-reveal/Fade';
 
 
 const Projects = () => {
@@ -20,10 +21,19 @@ const Projects = () => {
         <div className={s.projectsBlock}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <div className={`${styleContainer.content} ${s.content}`}>
-                    <Title text={'Projects'} icon={<GoProject style={{height: '20px', width: '20px', color: 'white'}}/>} subtitle={'Projects'}/>
+                    <Fade bottom>
+                    <Title text={'Projects'} icon={<GoProject style={{height: '20px', width: '20px', color: 'white'}}/>}
+                           subtitle={'Projects'}/>
+                    </Fade>
                     <div className={s.projects}>
-                        <Project style={social} title={'Social network'} description={'Cool social network'}/>
-                        <Project style={todolist} title={'Todolist'} description={'Cool todolist'}/>
+                        <Fade left>
+                            <Project style={social} title={'Social network'} description={'Cool social network'}/>
+                        </Fade>
+                        <Fade right>
+
+                            <Project style={todolist} title={'Todolist'} description={'Cool todolist'}/>
+                        </Fade>
+
                     </div>
                 </div>
 

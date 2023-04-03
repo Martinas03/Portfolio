@@ -7,11 +7,13 @@
   width: 50%;
   margin-bottom: 34px;
   color: $textColor;
+  background-color: $bgColor;
   //margin-left: 1px;
   //margin-right: 1px;
   @media screen and (max-width: 624px ) {
     width: 100%;
   }
+
   label {
     text-transform: uppercase;
   }
@@ -20,6 +22,7 @@
     border: none;
     height: 30px;
     //font-size: 25px;
+
   }
 }
 

@@ -4,6 +4,7 @@ import styleContainer from "../comon/styles/Container.module.css";
 import ContactsForm from "./contactsForm/ContactsForm";
 import Title from "../comon/components/Title";
 import {RiContactsLine} from "react-icons/ri";
+import Fade from 'react-reveal/Fade';
 
 
 const Contacts = () => {
@@ -11,9 +12,13 @@ const Contacts = () => {
         <div className={s.contactsBlock}>
             <div className={`${styleContainer.container} ${s.contactsContainer}`}>
                 <div className={`${styleContainer.content} ${s.content}`}>
-                    <Title text={'Contacts'}
-                           icon={<RiContactsLine style={{height: '20px', width: '20px', color: 'white'}}/>}
-                           subtitle={'Contacts'}/>
+                    <Fade bottom>
+
+                        <Title text={'Contacts'}
+                               icon={<RiContactsLine style={{height: '20px', width: '20px', color: 'white'}}/>}
+                               subtitle={'Contacts'}/>
+                    </Fade>
+
                     <ContactsForm/>
                 </div>
             </div>
