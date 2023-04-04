@@ -89,13 +89,21 @@
     gap: 8px;
     display: flex;
     justify-content: center;
-    color: $primaryColor;
+    border: $primaryColor;
 
     .iconWrapper {
       width: 60px;
       height: 60px;
       border: 1px solid $secondTextColor;
       border-radius: 50%;
+      &:hover {
+        border: 1px solid $primaryColor;
+        transition: all 0.3s ease-in-out 0s;
+        :nth-child(1) {
+          color: $primaryColor;
+          transition: all 0.3s ease-in-out 0s;
+        }
+      }
       @include flex(row, center, center);
 
 
@@ -104,14 +112,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        &:hover {
-          color: $primaryColor;
-          //background-color: $bgColor;
-          //transition: all 0.3s ease-in-out 0s;
-          //border: 1px solid $primaryColor;
-          //box-sizing: border-box;
-
-        }
       }
     }
   }

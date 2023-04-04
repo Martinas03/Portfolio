@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './LeftSideBar.module.scss'
 import Button from "../comon/components/Button/Button";
-import {AiOutlineWhatsApp} from 'react-icons/ai'
+import {BsWhatsapp} from 'react-icons/bs'
 import {SlSocialVkontakte} from 'react-icons/sl'
 import {BsTelegram} from 'react-icons/bs'
 
@@ -20,7 +20,7 @@ const LeftSideBar = () => {
             <h2 className={s.address}>Based in Moscow</h2>
             <p className={s.rights}>© 2022 Martinas. All Rights Reserved</p>
             <div className={s.social}>
-                <div className={s.iconWrapper}><a href=""><AiOutlineWhatsApp
+                <div className={s.iconWrapper}><a href=""><BsWhatsapp
                     style={{height: '30px', width: '30px', color: '#999999'}}/></a></div>
                 <div className={s.iconWrapper}><a href=""><SlSocialVkontakte
                     style={{height: '30px', width: '30px', color: '#999999'}}/></a></div>

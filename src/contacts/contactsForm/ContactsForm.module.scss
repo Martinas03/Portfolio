@@ -12,12 +12,17 @@
     margin-right: 20px;
     label {
         color: white;
+        text-transform: uppercase;
     }
     textarea {
-        background-color: $bgSecondColor;
+        background-color: $bgColor;
         border: none;
         height: 140px;
+        resize: none;
         //border-bottom: $secondTextColor;
+        &:focus {
+            outline: none;
+        }
     }
 }
 

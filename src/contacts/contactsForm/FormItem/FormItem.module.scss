@@ -18,12 +18,25 @@
     text-transform: uppercase;
   }
   input {
-    background-color: $bgSecondColor;
+    background-color: $bgColor;
     border: none;
     height: 30px;
+    color: white;
     //font-size: 25px;
-
+    &:focus {
+      outline: none;
+    }
   }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 500s ease-in-out 0s;
+}
+input:-webkit-autofill {
+  -webkit-text-fill-color: white !important;
 }
 
 .span {

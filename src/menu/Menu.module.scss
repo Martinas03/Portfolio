@@ -17,10 +17,25 @@
   transition: .3s;
   background: $bgColor;
   z-index: 99;
-  @media screen and (max-width: 767px ) {
+  @media screen and (max-width: 767px) {
     right: 38px;
     top: 30px;
   }
+
+  &:hover {
+    border: $primaryColor solid 1px;
+
+    :nth-child(1) {
+      background-color: $primaryColor;
+      transition: all 0.3s ease-in-out 0s;
+    }
+
+    :nth-child(2) {
+      background-color: $primaryColor;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
+
   .bar {
     width: 20px;
     display: block;
