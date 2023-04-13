@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Skills.module.scss'
-import styleContainer from './../comon/styles/Container.module.css'
+import styleContainer from './../comon/styles/Container.module.scss'
 import Skill from "./skill/Skill";
 import {
     faCss3,
@@ -21,7 +21,7 @@ import Fade from 'react-reveal/Fade';
 
 const Skills = () => {
     return (
-        <div className={s.skillsBlock}>
+        <div id='skills' className={s.skillsBlock}>
             <div className={`${styleContainer.container} ${s.skillsContainer}`}>
                 <div className={`${styleContainer.content} ${s.content}`}>
                     <Fade bottom>

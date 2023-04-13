@@ -17,14 +17,20 @@
     @media screen and (max-width: 1024px ) {
         display: none;
     }
-}
-
-a {
-    &:hover {
-        :nth-child(1) {
-            color: #28e98c;
-            transition: all 0.3s ease-in-out 0s;
+    a {
+        &:hover {
+            :nth-child(1) {
+                color: $primaryColor;
+                transition: all 0.3s ease-in-out 0s;
+            }
         }
     }
+    .active {
+        color: $primaryColor;
+    }
 }
+
+
+
+
 

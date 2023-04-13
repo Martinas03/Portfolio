@@ -17,9 +17,9 @@
   transition: .3s;
   background: $bgColor;
   z-index: 99;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1004px) {
     right: 38px;
-    top: 30px;
+    top: 100px;
   }
 
   &:hover {

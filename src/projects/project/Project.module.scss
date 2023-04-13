@@ -5,6 +5,13 @@
   width: 350px;
   border-radius: 30px;
   margin: 5px;
+  @media screen and (max-width: 1024px) {
+    max-width: 350px;
+  }
+  @media screen and (max-width: 410px) {
+    max-width: 260px;
+    margin: 30px;
+  }
 
   .img {
     height: 300px;
@@ -16,7 +23,9 @@
     position: relative;
     border-radius: 30px;
     background-color: $bgColor;
-
+    @media screen and (max-width: 410px) {
+      height: 230px;
+    }
     &::before {
       position: absolute;
       content: '';
@@ -57,7 +66,7 @@
       }
 
       .description {
-       @include text($textFontFamily, 14px, 300, 1.2);
+        @include text($textFontFamily, 14px, 300, 1.2);
         margin: 0;
       }
 

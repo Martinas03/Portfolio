@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Projects.module.scss'
-import styleContainer from './../comon/styles/Container.module.css'
-import Project from './projects/Project';
+import styleContainer from './../comon/styles/Container.module.scss'
+import Project from './project/Project';
 import Title from '../comon/components/Title';
 import todoImage from './../assets/images/todolist.png'
 import socialImage from './../assets/images/social_network.png'
@@ -18,7 +18,7 @@ const Projects = () => {
         backgroundImage: `url(${socialImage})`,
     };
     return (
-        <div className={s.projectsBlock}>
+        <div id='projects' className={s.projectsBlock}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <div className={`${styleContainer.content} ${s.content}`}>
                     <Fade bottom>

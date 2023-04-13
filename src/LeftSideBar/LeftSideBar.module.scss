@@ -13,15 +13,17 @@
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  @media screen and (max-width: 1220px ) {
+  @media screen and (max-width: 1300px) {
     display: block;
     position: relative;
-    max-width: 767px;
+    max-width: 750px;
     left: 0;
     top: 0;
+    margin-right: 5px;
+    margin-left: 5px;
     transform: translateY(0);
     margin-top: 20px;
-    padding: 30px;
+    padding: 30px 0;
   }
 
 
@@ -30,6 +32,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-right: 20px;
+    margin-left: 20px;
 
     img {
       height: auto;
@@ -96,16 +100,18 @@
       height: 60px;
       border: 1px solid $secondTextColor;
       border-radius: 50%;
+
       &:hover {
         border: 1px solid $primaryColor;
         transition: all 0.3s ease-in-out 0s;
+
         :nth-child(1) {
           color: $primaryColor;
           transition: all 0.3s ease-in-out 0s;
         }
       }
-      @include flex(row, center, center);
 
+      @include flex(row, center, center);
 
 
       a {

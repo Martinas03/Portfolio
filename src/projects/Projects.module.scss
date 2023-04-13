@@ -2,25 +2,39 @@
 @import './../comon/styles/sass/mixins.scss';
 
 .projectsBlock {
-    @include block();
-    .projectsContainer {
-        flex-direction: column;
-        justify-content: flex-start;
-        flex-wrap: nowrap;
-        .content {
-            .projects {
-                //border: 1px solid;
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-                align-items: flex-start;
-                flex-wrap: wrap;
-                @media screen and (max-width: 624px ) {
-                    justify-content: center;
-                }
-            }
+  @include block();
+
+  .projectsContainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    //flex-wrap: nowrap;
+
+    .content {
+      @media screen and (max-width: 1300px) {
+        width: 790px;
+      }
+       @media screen and (max-width: 880px) {
+         max-width: 770px;
+         width: 100%;
+         margin-left: auto;
+      }
+
+
+      .projects {
+        //border: 1px solid;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        @media screen and (max-width: 880px) {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         }
+      }
     }
+  }
 }
 
 
