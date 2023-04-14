@@ -1,5 +1,5 @@
-import React from 'react';
-import s from './Nav.module.scss'
+import React, {useState} from 'react';
+import s from './BurgerNav.module.scss'
 import {FaBeer} from "react-icons/fa";
 import {AiOutlineHome} from "react-icons/ai";
 import {IoShapesOutline} from "react-icons/io5";
@@ -8,9 +8,11 @@ import {RiContactsLine} from "react-icons/ri";
 import {Link} from "react-scroll";
 
 
-const Nav = () => {
+const BurgerNav = (props) => {
+
+    // let [isActive, setIsActive] = useState(false)
     return (
-        <div className={s.nav}>
+        <div className={props.isActive === false ?  s.nav : s.notActive}>
             {/*<a href=""> <AiOutlineHome style={{height: '20px', width: '20px', color: '#999999'}}/></a>*/}
             <Link activeClass={s.active}
                   activeStyle={{color: 'green'}}
@@ -79,9 +81,10 @@ const Nav = () => {
                     <RiContactsLine style={{height: '20px', width: '20px', color: '#999999'}}/>
                 </a>
             </Link>
+
             {/*<a href=""> <RiContactsLine style={{height: '20px', width: '20px', color: '#999999'}}/></a>*/}
         </div>
     );
 };
-export default Nav;
+export default BurgerNav;
 

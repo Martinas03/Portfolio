@@ -1,0 +1,60 @@
+@import './../../comon/styles/sass/variebles.scss';
+@import './../../comon/styles/sass/mixins.scss';
+
+.nav {
+  background-color: $bgColor;
+  @include flex(column, space-between, center);
+  border: 1px solid #575757;
+  border-radius: 30px;
+  position: fixed;
+  right: 38.5px;
+  top: 100px;
+  width: 55px;
+  text-align: center;
+  gap: 20px;
+  padding: 60px 0 24px;
+  z-index: 20;
+  opacity: 0.8;
+  transform: translate(0, 0px);
+  transition: 0.7s;
+
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+
+  a {
+    &:hover {
+      :nth-child(1) {
+        color: $primaryColor;
+        transition: all 0.3s ease-in-out 0s;
+      }
+    }
+  }
+
+  .active {
+
+    color: $primaryColor;
+  }
+}
+
+.notActive {
+  @include flex(column, space-between, center);
+  border: 1px solid #575757;
+  border-radius: 30px;
+  position: fixed;
+  right: 38.5px;
+  top: 112px;
+  width: 55px;
+  text-align: center;
+  gap: 20px;
+  padding: 60px 0 24px;
+  z-index: 20;
+  opacity: 0;
+  transform: translate(0, -200px);
+  transition: 0.7s;
+}
+
+
+
+
+
