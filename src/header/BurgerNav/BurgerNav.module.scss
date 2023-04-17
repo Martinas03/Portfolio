@@ -12,7 +12,7 @@
   width: 55px;
   text-align: center;
   gap: 20px;
-  padding: 60px 0 24px;
+  padding: 70px 0 24px;
   z-index: 20;
   opacity: 0.8;
   transform: translate(0, 0px);
@@ -49,9 +49,10 @@
   gap: 20px;
   padding: 60px 0 24px;
   z-index: 20;
-  opacity: 0;
-  transform: translate(0, -200px);
-  transition: 0.7s;
+  //opacity: 0;
+  //transform: translate(0, -200px);
+  //transition: 0.7s;
+  display: none;
 }
 
 

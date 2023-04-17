@@ -20,11 +20,11 @@ const LeftSideBar = () => {
             <h2 className={s.address}>Based in Moscow</h2>
             <p className={s.rights}>© 2022 Martinas. All Rights Reserved</p>
             <div className={s.social}>
-                <div className={s.iconWrapper}><a href=""><BsWhatsapp
+                <div className={s.iconWrapper}><a href="https://api.whatsapp.com/send?phone=79017014413"><BsWhatsapp
                     style={{height: '30px', width: '30px', color: '#999999'}}/></a></div>
-                <div className={s.iconWrapper}><a href=""><SlSocialVkontakte
+                <div className={s.iconWrapper}><a href="https://vk.com/id688406378"><SlSocialVkontakte
                     style={{height: '30px', width: '30px', color: '#999999'}}/></a></div>
-                <div className={s.iconWrapper}><a href=""><BsTelegram
+                <div className={s.iconWrapper}><a href="https://tlgg.ru/martinas03"><BsTelegram
                     style={{height: '30px', width: '30px', color: '#999999'}}/></a></div>
             </div>
             <div className={s.buttonWrapper}>
