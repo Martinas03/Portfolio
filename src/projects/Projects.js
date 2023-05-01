@@ -22,7 +22,7 @@ const Projects = () => {
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
                 <div className={`${styleContainer.content} ${s.content}`}>
                     <Fade bottom>
-                    <Title text={'Projects'} icon={<GoProject style={{height: '20px', width: '20px', color: 'white'}}/>}
+                    <Title text={'Projects'} icon={<GoProject style={{height: '10px', width: '10px', color: 'white'}}/>}
                            subtitle={'Projects'}/>
                     </Fade>
                     <div className={s.projects}>

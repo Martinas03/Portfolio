@@ -26,7 +26,7 @@ const Skills = () => {
                 <div className={`${styleContainer.content} ${s.content}`}>
                     <Fade bottom>
                         <Title text='Skills'
-                               icon={<IoShapesOutline style={{height: '20px', width: '20px', color: 'white'}}/>}
+                               icon={<IoShapesOutline style={{height: '10px', width: '10px', color: 'white'}}/>}
                                subtitle={'Skills'}/>
                     </Fade>
 

@@ -9,76 +9,56 @@ import {Link} from "react-scroll";
 
 
 const Nav = () => {
+
+    // let location = useLocation
+
+    let linksArray = [
+        {
+            to: 'main',
+            icon: <AiOutlineHome style={{height: '20px', width: '20px', color: '#999999'}}/>
+        },
+        {
+            to: 'skills',
+            icon: <IoShapesOutline style={{height: '20px', width: '20px', color: '#999999'}}/>
+        },
+        {
+            to: 'projects',
+            icon: <GoProject style={{height: '20px', width: '20px', color: '#999999'}}/>
+        },
+        {
+            to: 'contacts',
+            icon: <RiContactsLine style={{height: '20px', width: '20px', color: '#999999'}}/>
+        },
+
+    ]
+
+
     return (
         <div className={s.nav}>
             {/*<a href=""> <AiOutlineHome style={{height: '20px', width: '20px', color: '#999999'}}/></a>*/}
-            <Link activeClass={s.active}
-                  activeStyle={{color: 'green'}}
-                  to="main"
-                  spy={true}
-                  smooth={true}
-                  hashSpy={true}
-                  offset={50}
-                  duration={500}
-                  isDynamic={true}
-                  // onSetActive={}
-                  // onSetInactive={this.handleSetInactive}
-                  ignoreCancelEvents={false}
-                  spyThrottle={500}
-            >
-                <a href="">
+            {linksArray.map(link => {
 
-                    <AiOutlineHome style={{height: '20px', width: '20px', color: '#999999'}}/>
-                </a>
-            </Link>
-            {/*<a href=""> <IoShapesOutline style={{height: '20px', width: '20px', color: '#999999'}}/></a>*/}
-            <Link activeClass={s.active}
-                  to="skills"
-                  spy={true}
-                  smooth={true}
-                  hashSpy={true}
-                  offset={50}
-                  duration={500}
-                  isDynamic={true}
-                  ignoreCancelEvents={false}
-                  spyThrottle={500}
-            >
-                <a href="">
-                    <IoShapesOutline style={{height: '20px', width: '20px', color: '#999999'}}/>
-                </a>
-            </Link>
-
-            <Link activeClass={s.active}
-                  to="projects"
-                  spy={true}
-                  smooth={true}
-                  hashSpy={true}
-                  offset={50}
-                  duration={500}
-                  isDynamic={true}
-                  ignoreCancelEvents={false}
-                  spyThrottle={500}
-            >
-                <a href="">
-                    <GoProject style={{height: '20px', width: '20px', color: '#999999'}}/>
-                </a>
-            </Link>
-
-            <Link activeClass={s.active}
-                  to="contacts"
-                  spy={true}
-                  smooth={true}
-                  hashSpy={true}
-                  offset={50}
-                  duration={500}
-                  isDynamic={true}
-                  ignoreCancelEvents={false}
-                  spyThrottle={500}
-            >
-                <a href="">
-                    <RiContactsLine style={{height: '20px', width: '20px', color: '#999999'}}/>
-                </a>
-            </Link>
+                
+                return (
+                    <Link key={link.to}
+                          activeClass={s.active}
+                          activeStyle={{color: 'red'}}
+                          to={link.to}
+                          spy={true}
+                          smooth={true}
+                          hashSpy={true}
+                          offset={50}
+                          duration={500}
+                          isDynamic={true}
+                          ignoreCancelEvents={false}
+                          spyThrottle={500}
+                    >
+                        <a href="" className={s.activeStyle}>
+                            {link.icon}
+                        </a>
+                    </Link>
+                )
+            })}
             {/*<a href=""> <RiContactsLine style={{height: '20px', width: '20px', color: '#999999'}}/></a>*/}
         </div>
     );

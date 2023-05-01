@@ -18,7 +18,7 @@ const Main = (props) => {
             <div className={`${styleContainer.container} ${s.container}`}>
                 <div className={`${s.content} ${styleContainer.content}`}>
                     <Title text={'About me'}
-                           icon={<AiOutlineHome style={{height: '20px', width: '20px', color: 'white'}}/>}
+                           icon={<AiOutlineHome style={{height: '10px', width: '10px', color: 'white'}}/>}
                            subtitle={'Home'}/>
                     <div className={s.text}>
                         {/*<h4>Home</h4>*/}

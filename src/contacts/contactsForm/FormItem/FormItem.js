@@ -11,7 +11,7 @@ const FormItem = (props) => {
                         : props.isRequired === 'false'
                         ? <span className={s.span}> (optional)</span> : ''}
             </label>
-            <input type="text" placeholder={props.placeholder} autoComplete={'off'}/>
+            <input type={props.type} name={props.name} placeholder={props.placeholder} autoComplete={'off'}/>
         </div>
     );
 };

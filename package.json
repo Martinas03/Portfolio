@@ -17,7 +17,8 @@
     "web-vitals": "^2.1.0",
     "react-icons": "^4.8.0",
     "react-reveal": "^1.2.2",
-    "react-scroll": "^1.8.9"
+    "react-scroll": "^1.8.9",
+    "@emailjs/browser": "^3.11.0"
   },
   "scripts": {
     "start": "react-scripts start",
