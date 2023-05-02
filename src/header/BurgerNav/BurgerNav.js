@@ -10,6 +10,31 @@ import {Link} from "react-scroll";
 
 const BurgerNav = (props) => {
 
+// Get the navigation links and store them in an array
+    const navLinks = Array.from(document.querySelectorAll('.nav-link'));
+
+    // Function to update the active state of the navigation
+    function updateNavActive(hashParam) {
+        // Loop through the navigation links and remove the active class
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+        });
+
+        // Find the link with a href attribute matching the hash parameter and add the active class
+        const activeLink = navLinks.find(link => link.getAttribute('href') === hashParam);
+        if (activeLink) {
+            activeLink.classList.add('active');
+        }
+    }
+
+    // Update the active state of the navigation on page load
+    updateNavActive(window.location.hash);
+
+    // Listen for changes to the hash parameter and update the active state of the navigation accordingly
+    window.onhashchange = () => {
+        // let location = useLocation
+        console.log(window.location.hash)
+    };
 
     let linksArray = [
         {
@@ -39,7 +64,6 @@ const BurgerNav = (props) => {
                 return (
                     <Link key={link.to}
                           activeClass={s.active}
-                          activeStyle={{color: 'red'}}
                           to={link.to}
                           spy={true}
                           smooth={true}
@@ -50,9 +74,7 @@ const BurgerNav = (props) => {
                           ignoreCancelEvents={false}
                           spyThrottle={500}
                     >
-                        <a href="" className={s.a}>
                             {link.icon}
-                        </a>
                     </Link>
                 )
             })}

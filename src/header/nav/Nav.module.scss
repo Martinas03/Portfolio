@@ -20,19 +20,19 @@
     a {
         &:hover {
             :nth-child(1) {
-                color: red;
+                color: $primaryColor;
                 transition: all 0.3s ease-in-out 0s;
             }
         }
     }
     .active {
-        color: blue;
+        svg {
+            color: $primaryColor !important;
+        }
+
     }
 }
 
-.activeStyle {
-    color: aqua !important;
-}
 
 
 

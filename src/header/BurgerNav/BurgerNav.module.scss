@@ -22,17 +22,19 @@
     display: none;
   }
 
-  .a {
+  a {
     &:hover {
       :nth-child(1) {
-        color: red;
+        color: $primaryColor;
         transition: all 0.3s ease-in-out 0s;
       }
     }
   }
 
   .active {
-    color: $primaryColor;
+    svg {
+      color: $primaryColor !important;
+    }
   }
 }
 
