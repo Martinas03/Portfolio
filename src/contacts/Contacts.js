@@ -14,7 +14,7 @@ const Contacts = () => {
                 <div className={`${styleContainer.content} ${s.content}`}>
                     <Fade bottom>
 
-                        <Title text={'Contacts'}
+                        <Title text={'Contact me'}
                                icon={<RiContactsLine style={{height: '10px', width: '10px', color: 'white'}}/>}
                                subtitle={'Contacts'}/>
                     </Fade>

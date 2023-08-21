@@ -17,6 +17,12 @@ import Title from "../comon/components/Title";
 import {faHouse} from "@fortawesome/free-solid-svg-icons";
 import {IoShapesOutline} from "react-icons/io5";
 import Fade from 'react-reveal/Fade';
+import {SiTypescript, SiVite} from "react-icons/si";
+import {BsGithub} from "react-icons/bs";
+import {AiOutlineGithub} from "react-icons/ai";
+import {DiGit} from "react-icons/di";
+import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
+import {faGitAlt} from "@fortawesome/free-brands-svg-icons/faGitAlt";
 
 
 const Skills = () => {
@@ -33,46 +39,50 @@ const Skills = () => {
                     <Fade bottom>
 
 
-                    <div className={s.skills}>
-                        {/*<Fade left>*/}
-                            <Skill title={'JS'} description={'Can do nice functions'}
-                                   logo={<FontAwesomeIcon icon={faHouse} size={'3x'} color={'white'}
-                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
-
-                        {/*<Fade bottom>*/}
-                            <Skill title={'JS'} description={'Can do nice functions'}
-                                   logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'}
-                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
-                        {/*</Fade>*/}
-
-                        {/*<Fade top>*/}
-                            <Skill title={'JS'} description={'Can do nice functions'}
-                                   logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'}
-                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
-                        {/*</Fade>*/}
-
-                        {/*<Fade right>*/}
-                            <Skill title={'CSS'} description={'Can do nice styles'}
-                                   logo={<FontAwesomeIcon icon={faCss3Alt} size={'3x'} color={'white'}
-                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
-                        {/*</Fade>*/}
-
-                        {/*<Fade left>*/}
+                        <div className={s.skills}>
                             <Skill title={'REACT'} description={'Can do nice component'}
                                    logo={<FontAwesomeIcon icon={faReact} size={'3x'} color={'white'}
                                                           style={{margin: 'auto auto 29px auto'}}/>}/>
-                        {/*</Fade>*/}
+                            <Skill title={'VITE'} description={'Can do nice HTML'}
+                                   logo={<SiVite style={{
+                                       height: '45px',
+                                       width: '50px',
+                                       color: 'white',
+                                       margin: 'auto auto 29px auto'
+                                   }}/>}/>
 
-                        {/*<Fade bottom>*/}
+                            <Skill title={'JS'} description={'Can do nice functions'}
+                                   logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'}
+                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
+
+                            <Skill title={'TS'} description={'Can do nice functions'}
+                                   logo={<SiTypescript
+                                       style={{
+                                           height: '45px',
+                                           width: '40px',
+                                           color: 'white',
+                                           margin: 'auto auto 29px auto'
+                                       }}/>}/>
+
+                            <Skill title={'CSS'} description={'Can do nice styles'}
+                                   logo={<FontAwesomeIcon icon={faCss3Alt} size={'3x'} color={'white'}
+                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
+
+
                             <Skill title={'HTML'} description={'Can do nice HTML'}
                                    logo={<FontAwesomeIcon icon={faHtml5} size={'3x'} color={'white'}
                                                           style={{margin: 'auto auto 29px auto'}}/>}/>
-                        {/*</Fade>*/}
 
-                        {/*</Fade>*/}
+                            <Skill title={'GITHUB'} description={'Can do nice HTML'}
+                                   logo={<FontAwesomeIcon icon={faGithub} size={'3x'} color={'white'}
+                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
 
-                    </div>
-            </Fade>
+                           <Skill title={'GIT'} description={'Can do nice HTML'}
+                                   logo={<FontAwesomeIcon icon={faGitAlt} size={'3x'} color={'white'}
+                                                          style={{margin: 'auto auto 29px auto'}}/>}/>
+
+                        </div>
+                    </Fade>
                 </div>
             </div>
         </div>

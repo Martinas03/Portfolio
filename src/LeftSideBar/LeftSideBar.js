@@ -6,6 +6,8 @@ import {SlSocialVkontakte} from 'react-icons/sl'
 import {BsTelegram} from 'react-icons/bs'
 import logo from './../assets/images/logo-2.png'
 import photo from './../assets/images/profile-photo.jpg'
+import {SiTypescript} from "react-icons/si";
+// import {BiLogoTypescript, SiTypescript} from "react-icons";
 
 
 const LeftSideBar = () => {

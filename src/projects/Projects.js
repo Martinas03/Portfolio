@@ -27,12 +27,20 @@ const Projects = () => {
                     </Fade>
                     <div className={s.projects}>
                         <Fade left>
-                            <Project style={social} title={'Social network'} description={'Cool social network'}/>
+                            <Project href={'https://martinas03.github.io/react-samurai/'} style={social} title={'Social network'} description={'Cool social network'}/>
                         </Fade>
                         <Fade right>
 
+                            <Project href={'https://martinas03.github.io/Todolist/'} style={todolist} title={'Todolist'} description={'Cool todolist'}/>
+                        </Fade>
+                        <Fade left>
+
                             <Project style={todolist} title={'Todolist'} description={'Cool todolist'}/>
                         </Fade>
+                        {/*<Fade right>*/}
+
+                        {/*    <Project style={todolist} title={'Todolist'} description={'Cool todolist'}/>*/}
+                        {/*</Fade>*/}
 
                     </div>
                 </div>
