@@ -35,7 +35,7 @@ const Projects = () => {
                         </Fade>
                         <Fade left>
 
-                            <Project style={todolist} title={'Todolist'} description={'Cool todolist'}/>
+                            <Project href={'https://martinas03.github.io/my_counter/'} style={todolist} title={'Todolist'} description={'Cool todolist'}/>
                         </Fade>
                         {/*<Fade right>*/}
 
