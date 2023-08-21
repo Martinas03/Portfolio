@@ -4,6 +4,7 @@ import styleContainer from './../comon/styles/Container.module.scss'
 import Project from './project/Project';
 import Title from '../comon/components/Title';
 import todoImage from './../assets/images/todolist.png'
+import counter from './../assets/images/counter.png'
 import socialImage from './../assets/images/social_network.png'
 import {GoProject} from "react-icons/go";
 import Fade from 'react-reveal/Fade';
@@ -11,12 +12,16 @@ import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
 
-    const todolist = {
+    const todoList = {
         backgroundImage: `url(${todoImage})`,
     };
     const social = {
         backgroundImage: `url(${socialImage})`,
     };
+    const myCounter = {
+        backgroundImage: `url(${counter})`,
+    };
+
     return (
         <div id='projects' className={s.projectsBlock}>
             <div className={`${styleContainer.container} ${s.projectsContainer}`}>
@@ -31,16 +36,12 @@ const Projects = () => {
                         </Fade>
                         <Fade right>
 
-                            <Project href={'https://martinas03.github.io/Todolist/'} style={todolist} title={'Todolist'} description={'Cool todolist'}/>
+                            <Project href={'https://martinas03.github.io/Todolist/'} style={todoList} title={'Todolist'} description={'Cool todolist'}/>
                         </Fade>
                         <Fade left>
 
-                            <Project href={'https://martinas03.github.io/my_counter/'} style={todolist} title={'Todolist'} description={'Cool todolist'}/>
+                            <Project href={'https://martinas03.github.io/my_counter/'} style={myCounter} title={'Counter'} description={'Cool counter'}/>
                         </Fade>
-                        {/*<Fade right>*/}
-
-                        {/*    <Project style={todolist} title={'Todolist'} description={'Cool todolist'}/>*/}
-                        {/*</Fade>*/}
 
                     </div>
                 </div>
