@@ -50,10 +50,10 @@ const Projects = () => {
                         <Fade left>
                             <Project href={'https://martinas03.github.io/my_counter/'} style={myCounter} title={'Counter'} description={'Cool counter'}/>
                         </Fade>
+                        {/*<Fade right>*/}
+                        {/*    <Project href={'https://github.com/Martinas03'} style={githubAccount} title={'My github'} description={'My github'}/>*/}
+                        {/*</Fade>*/}
                         <Fade right>
-                            <Project href={'https://github.com/Martinas03'} style={githubAccount} title={'My github'} description={'My github'}/>
-                        </Fade>
-                        <Fade left>
                             <Project href={'https://martinas03.github.io/cardpack/'} style={cardPacks} title={'Cards'} description={'Cool Cards Packs'}/>
                         </Fade>
                     </div>

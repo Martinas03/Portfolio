@@ -5,6 +5,7 @@ import {SlSocialVkontakte} from 'react-icons/sl'
 import {BsTelegram} from 'react-icons/bs'
 import logo from './../assets/images/logo-2.png'
 import photo from './../assets/images/profile-photo.jpg'
+import {AiFillGithub} from "react-icons/ai";
 
 
 const LeftSideBar = () => {
@@ -26,6 +27,8 @@ const LeftSideBar = () => {
                 <div className={s.iconWrapper}><a href="https://vk.com/id688406378"><SlSocialVkontakte
                     style={{height: '30px', width: '30px', color: '#999999'}}/></a></div>
                 <div className={s.iconWrapper}><a href="https://tlgg.ru/martinas03"><BsTelegram
+                    style={{height: '30px', width: '30px', color: '#999999'}}/></a></div>
+                <div className={s.iconWrapper}><a href='https://github.com/Martinas03'><AiFillGithub
                     style={{height: '30px', width: '30px', color: '#999999'}}/></a></div>
             </div>
             {/*<div className={s.buttonWrapper}>*/}
