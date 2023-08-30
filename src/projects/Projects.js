@@ -7,6 +7,7 @@ import todoImage from './../assets/images/todolist.png'
 import counter from './../assets/images/counter.png'
 import socialImage from './../assets/images/social_network.png'
 import github from './../assets/images/github.jpeg'
+import cards from './../assets/images/CardPacks.png'
 import {GoProject} from "react-icons/go";
 import Fade from 'react-reveal/Fade';
 
@@ -25,6 +26,10 @@ const Projects = () => {
 
    const githubAccount = {
         backgroundImage: `url(${github})`,
+    };
+
+    const cardPacks = {
+        backgroundImage: `url(${cards})`,
     };
 
     return (
@@ -48,9 +53,11 @@ const Projects = () => {
                         <Fade right>
                             <Project href={'https://github.com/Martinas03'} style={githubAccount} title={'My github'} description={'My github'}/>
                         </Fade>
+                        <Fade left>
+                            <Project href={'https://martinas03.github.io/cardpack/'} style={cardPacks} title={'Cards'} description={'Cool Cards Packs'}/>
+                        </Fade>
                     </div>
                 </div>
-
             </div>
         </div>
     );
