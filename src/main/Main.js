@@ -7,6 +7,7 @@ import Title from "../comon/components/Title";
 import {AiOutlineHome} from "react-icons/ai";
 import {AiOutlineArrowDown} from "react-icons/ai";
 import { Link, animateScroll as scroll } from "react-scroll";
+import CV from './../assets/images/CV.pdf'
 import {GoProject} from "react-icons/go";
 import BurgerNav from "../header/BurgerNav/BurgerNav";
 
@@ -22,13 +23,14 @@ const Main = (props) => {
                            subtitle={'Home'}/>
                     <div className={s.text}>
                         {/*<h4>Home</h4>*/}
-                        <h1>Hi! I am Martinas <span>Oliaka!</span> I"m frontend react developer</h1>
+                        <h1>Hi! I am Martinas <span>Oliaka!</span><br/>  I"m frontend react developer</h1>
+
                         {/*<p>Web disigner</p>*/}
                     </div>
                     <p className={s.description}>Veb developerVeb developerVeb developerVeb developerVeb developerVeb
                         developerVeb developerVeb developer</p>
-
                     <div className={s.linkWrapper}>
+                    <a href={CV} download={'cd.pdf'} className={s.cv}>Download CV</a>
                         <Link
                         activeClass={s.active}
                         to="projects"
