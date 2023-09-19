@@ -40,10 +40,10 @@ const Skills = () => {
 
 
                         <div className={s.skills}>
-                            <Skill title={'REACT'} description={'Can do nice component'}
+                            <Skill title={'REACT'} description={'Advanced'}
                                    logo={<FontAwesomeIcon icon={faReact} size={'3x'} color={'white'}
                                                           style={{margin: 'auto auto 29px auto'}}/>}/>
-                            <Skill title={'VITE'} description={'Can do nice HTML'}
+                            <Skill title={'VITE'} description={'Advanced'}
                                    logo={<SiVite style={{
                                        height: '45px',
                                        width: '50px',
@@ -51,11 +51,11 @@ const Skills = () => {
                                        margin: 'auto auto 29px auto'
                                    }}/>}/>
 
-                            <Skill title={'JS'} description={'Can do nice functions'}
+                            <Skill title={'JS'} description={'Proficient'}
                                    logo={<FontAwesomeIcon icon={faSquareJs} size={'3x'} color={'white'}
                                                           style={{margin: 'auto auto 29px auto'}}/>}/>
 
-                            <Skill title={'TS'} description={'Can do nice functions'}
+                            <Skill title={'TS'} description={'Proficient'}
                                    logo={<SiTypescript
                                        style={{
                                            height: '45px',
@@ -64,20 +64,20 @@ const Skills = () => {
                                            margin: 'auto auto 29px auto'
                                        }}/>}/>
 
-                            <Skill title={'CSS'} description={'Can do nice styles'}
+                            <Skill title={'CSS'} description={'Proficient'}
                                    logo={<FontAwesomeIcon icon={faCss3Alt} size={'3x'} color={'white'}
                                                           style={{margin: 'auto auto 29px auto'}}/>}/>
 
 
-                            <Skill title={'HTML'} description={'Can do nice HTML'}
+                            <Skill title={'HTML'} description={'Proficient'}
                                    logo={<FontAwesomeIcon icon={faHtml5} size={'3x'} color={'white'}
                                                           style={{margin: 'auto auto 29px auto'}}/>}/>
 
-                            <Skill title={'GITHUB'} description={'Can do nice HTML'}
+                            <Skill title={'GITHUB'} description={'Advanced'}
                                    logo={<FontAwesomeIcon icon={faGithub} size={'3x'} color={'white'}
                                                           style={{margin: 'auto auto 29px auto'}}/>}/>
 
-                           <Skill title={'GIT'} description={'Can do nice HTML'}
+                           <Skill title={'GIT'} description={'Advanced'}
                                    logo={<FontAwesomeIcon icon={faGitAlt} size={'3x'} color={'white'}
                                                           style={{margin: 'auto auto 29px auto'}}/>}/>
 

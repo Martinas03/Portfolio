@@ -42,19 +42,19 @@ const Projects = () => {
                     </Fade>
                     <div className={s.projects}>
                         <Fade left>
-                            <Project href={'https://martinas03.github.io/react-samurai/'} style={social} title={'Social network'} description={'Cool social network'}/>
+                            <Project href={'https://martinas03.github.io/react-samurai/'} style={social} title={'Social network'} description={'Social network with profile page, friends and list os users'}/>
                         </Fade>
                         <Fade right>
-                            <Project href={'https://martinas03.github.io/Todolist/'} style={todoList} title={'Todolist'} description={'Cool todolist'}/>
+                            <Project href={'https://martinas03.github.io/Todolist/'} style={todoList} title={'Todolist'} description={'Cool task manager with simple interface'}/>
                         </Fade>
                         <Fade left>
-                            <Project href={'https://martinas03.github.io/my_counter/'} style={myCounter} title={'Counter'} description={'Cool counter'}/>
+                            <Project href={'https://martinas03.github.io/my_counter/'} style={myCounter} title={'Counter'} description={'Complex counter with settings'}/>
                         </Fade>
                         {/*<Fade right>*/}
                         {/*    <Project href={'https://github.com/Martinas03'} style={githubAccount} title={'My github'} description={'My github'}/>*/}
                         {/*</Fade>*/}
                         <Fade right>
-                            <Project href={'https://martinas03.github.io/cardpack/'} style={cardPacks} title={'Cards'} description={'Cool Cards Packs'}/>
+                            <Project href={'https://martinas03.github.io/cardpack/'} style={cardPacks} title={'Cards'} description={'Cool Cards Packs application with personal registration and ability to create packs and cards'}/>
                         </Fade>
                     </div>
                 </div>

@@ -71,6 +71,7 @@
       .description {
         @include text($textFontFamily, 14px, 300, 1.2);
         margin: 0;
+        color: $secondTextColor;
       }
 
     }
