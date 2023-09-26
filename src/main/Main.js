@@ -27,7 +27,7 @@ const Main = (props) => {
 
                         {/*<p>Web disigner</p>*/}
                     </div>
-                    <p className={s.description}>My name is Martinas. I'm an outstanding frontend developer with
+                    <p className={s.description}>My name is Martinas Oliaka. I'm an outstanding frontend developer with
                         incredible learning skills and the ability to solve problems without giving up. My goal as a
                         developer is to apply my technical skills in IT development and troubleshooting to realize the
                         vision and mission of the company.</p>
