@@ -31,9 +31,6 @@ const LeftSideBar = () => {
                 <div className={s.iconWrapper}><a href='https://github.com/Martinas03'><AiFillGithub
                     style={{height: '30px', width: '30px', color: '#999999'}}/></a></div>
             </div>
-            {/*<div className={s.buttonWrapper}>*/}
-            {/*    <Button/>*/}
-            {/*</div>*/}
         </div>
     );
 };

@@ -20,29 +20,14 @@ const ContactsForm = () => {
     };
     return (
         <div>
-            {/*<form ref={form} onSubmit={sendEmail}>*/}
-            {/*    <label>Name</label>*/}
-            {/*    <input type="text" name="user_name" />*/}
-            {/*    <label>Email</label>*/}
-            {/*    <input type="email" name="user_email" />*/}
-            {/*    <label>Phone number</label>*/}
-            {/*    <input type="text" name="phone_number" />*/}
-
-            {/*    <label>Message</label>*/}
-            {/*    <textarea name="message" />*/}
-            {/*    <input type="submit" value="Send" />*/}
-            {/*</form>*/}
-
             <form  ref={form} onSubmit={sendEmail} action="" className={s.formContainer}>
                 <FormItem title={'Full name'} placeholder={'Your full name'} isRequired={'true'} type={'text'} name={'user_name'}/>
                 <FormItem title={'E-mail'} placeholder={'Your E-mail address'} isRequired={'true'} type={'email'} name={'user_email'}/>
                 <FormItem title={'Phone'} placeholder={'Your phone number'} isRequired={'false'} type={'text'} name={'phone_number'}/>
-                {/*<FormItem title={'Sekect'} placeholder={'Select subject'} isRequired={'true'}/>*/}
-                {/*<FormItem title={'Message'} placeholder={'Write your message here'}/>*/}
+
                 <label htmlFor="phone-number">Message
                 </label>
                 <textarea placeholder={'Write your message here'} className={s.textArea} name={'message'}/>
-                {/*<button className={s.button}>send</button>*/}
                 <div className={s.buttonWrapper}>
                     <Button type={'submit'}  value="Send message"/>
                 </div>
@@ -55,10 +40,3 @@ const ContactsForm = () => {
 
 export default ContactsForm;
 
-// export const Button = () => {
-//     return (
-//         <div>
-//            <button className={s.button}>Send message</button>
-//         </div>
-//     )
-// }

@@ -3,24 +3,16 @@ import s from './Skills.module.scss'
 import styleContainer from './../comon/styles/Container.module.scss'
 import Skill from "./skill/Skill";
 import {
-    faCss3,
     faCss3Alt,
     faHtml5,
-    faJs,
-    faJsfiddle,
     faReact,
-    faSquareJs, faTelegram,
-    faVk, faWhatsapp
+    faSquareJs
 } from '@fortawesome/free-brands-svg-icons'
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import Title from "../comon/components/Title";
-import {faHouse} from "@fortawesome/free-solid-svg-icons";
 import {IoShapesOutline} from "react-icons/io5";
 import Fade from 'react-reveal/Fade';
 import {SiTypescript, SiVite} from "react-icons/si";
-import {BsGithub} from "react-icons/bs";
-import {AiOutlineGithub} from "react-icons/ai";
-import {DiGit} from "react-icons/di";
 import {faGithub} from "@fortawesome/free-brands-svg-icons/faGithub";
 import {faGitAlt} from "@fortawesome/free-brands-svg-icons/faGitAlt";
 

@@ -2,14 +2,11 @@ import React from 'react';
 import s from './Main.module.scss'
 import styleContainer from './../comon/styles/Container.module.scss'
 import {Fact} from "./Fact/Fact";
-import Sign from "../comon/components/Sign/Sign";
 import Title from "../comon/components/Title";
 import {AiOutlineHome} from "react-icons/ai";
 import {AiOutlineArrowDown} from "react-icons/ai";
-import {Link, animateScroll as scroll} from "react-scroll";
+import {Link} from "react-scroll";
 import CV from './../assets/images/CV.pdf'
-import {GoProject} from "react-icons/go";
-import BurgerNav from "../header/BurgerNav/BurgerNav";
 
 
 const Main = (props) => {
@@ -22,10 +19,8 @@ const Main = (props) => {
                            icon={<AiOutlineHome style={{height: '10px', width: '10px', color: 'white'}}/>}
                            subtitle={'Home'}/>
                     <div className={s.text}>
-                        {/*<h4>Home</h4>*/}
                         <h1>Hi! I am Martinas <span>Oliaka!</span><br/> I"m frontend react developer</h1>
 
-                        {/*<p>Web disigner</p>*/}
                     </div>
                     <p className={s.description}>My name is Martinas Oliaka. I'm an outstanding frontend developer with
                         incredible learning skills and the ability to solve problems without giving up. My goal as a
