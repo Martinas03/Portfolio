@@ -8,6 +8,7 @@ import counter from './../assets/images/counter.png'
 import socialImage from './../assets/images/social_network.png'
 import github from './../assets/images/github.jpeg'
 import cards from './../assets/images/CardPacks.png'
+import pizza from './../assets/images/react-pizza.png'
 import {GoProject} from "react-icons/go";
 import Fade from 'react-reveal/Fade';
 
@@ -52,6 +53,9 @@ const Projects = () => {
                         </Fade>
                         <Fade right>
                             <Project href={'https://martinas03.github.io/cardpack/'} style={cardPacks} title={'Cards'} description={'Cool Cards Packs application with personal registration and ability to create packs and cards'}/>
+                        </Fade>
+                        <Fade left>
+                            <Project href={'https://martinas03.github.io/react-pizza/'} style={pizza} title={'Counter'} description={'online shop "React-pizza" with cart, pagination and sorting'}/>
                         </Fade>
                     </div>
                 </div>
