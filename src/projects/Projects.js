@@ -55,7 +55,7 @@ const Projects = () => {
                             <Project href={'https://martinas03.github.io/cardpack/'} style={cardPacks} title={'Cards'} description={'Cool Cards Packs application with personal registration and ability to create packs and cards'}/>
                         </Fade>
                         <Fade left>
-                            <Project href={'https://martinas03.github.io/react-pizza/'} style={pizza} title={'Counter'} description={'online shop "React-pizza" with cart, pagination and sorting'}/>
+                            <Project href={'https://martinas03.github.io/react-pizza/'} style={pizza} title={'React-pizza'} description={'online shop "React-pizza" with cart, pagination and sorting'}/>
                         </Fade>
                     </div>
                 </div>
