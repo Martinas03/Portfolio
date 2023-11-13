@@ -3,13 +3,18 @@
 
 .title {
   //background-color: #ac5d5d;
-  left: auto;
+  //left: auto;
   width: 100%;
   margin: 0 0 33px;
   position: relative;
   padding: 0;
   @include text($textFontFamily, 48px, 100, 1.2);
-
+  @media screen and (max-width: 688px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   h2 {
     margin: 0;
     font-size: 48px;
